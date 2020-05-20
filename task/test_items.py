@@ -12,6 +12,6 @@ class TestProductPage():
 
 
     def test_product_page_has_add_to_cart_button(self, browser): 
-        browser.get("https://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/")
+        browser.get("http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/")
         result = self.element_exist ('.btn-add-to-basket', browser)
-        assert result == True,  "Button not found"
+        assert result,  "Button not found"
